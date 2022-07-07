@@ -2,7 +2,7 @@
 
 ## DevFinder is a website that aims to access the GitHub user profile through the GitHub API
 
-### Thechs:
+### Techs:
 
 - HTML
 - CSS
