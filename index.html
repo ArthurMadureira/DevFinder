@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevFinder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="content">
+    <header>
+      <h1>devfinder</h1>
+    </header>
+
+    <main>
+
+        <div class="search-field">
+          <svg height="24" width="25" xmlns="http://www.w3.org/2000/svg"><path d="M10.609 0c5.85 0 10.608 4.746 10.608 10.58 0 2.609-.952 5-2.527 6.847l5.112 5.087a.87.87 0 01-1.227 1.233l-5.118-5.093a10.58 10.58 0 01-6.848 2.505C4.759 21.16 0 16.413 0 10.58 0 4.747 4.76 0 10.609 0zm0 1.74c-4.891 0-8.87 3.965-8.87 8.84 0 4.874 3.979 8.84 8.87 8.84a8.855 8.855 0 006.213-2.537l.04-.047a.881.881 0 01.058-.053 8.786 8.786 0 002.558-6.203c0-4.875-3.979-8.84-8.87-8.84z" fill="#0079ff"/></svg>
+
+          <form action="">
+            <input type="text" id="search" placeholder="Search GitHub username..." required>
+  
+            <button id="search-btn">Search</button>
+          </form>
+
+        </div>
+
+
+      <div class="content-user">
+        <div class="init-infos">
+          <div id="avatar-div">
+            <img src="./images/default-avatar.svg" alt="" id="avatar">
+          </div>
+  
+          <div class="infos-default">
+            <h2 id="nome">Name</h2>
+            <p id="username">@GitHub username</p>
+            <p id="created_at">Joined in DD Month YYYY</p>
+          </div>
+        </div>
+
+        <div class="bio">
+          <p id="bio">This my bio</p>
+        </div>
+
+        <div class="tabs">
+          <div class="repos tab">
+            <p>Repos</p>
+            <p id="repos">8</p>
+          </div>
+
+          <div class="followers tab">
+            <p>Followers</p>
+            <p id="followers">0</p>
+          </div>
+
+          <div class="following tab">
+            <p>Following</p>
+            <p id="following">0</p>
+          </div>
+        </div>
+
+        <div class="contact">
+          <p class="location contact-p">
+            <img src="./images/icon-localization.svg" alt="">
+            <span id="location">Location</span>
+          </p>
+
+          <p class="blog contact-p">
+            <img src="./images/icon-website.svg" alt="">
+            <a id="blog"  target="_blank">https://yoursite.com</a>
+          </p>
+
+          <p class="twitter contact-p">
+            <img src="./images/twitter.svg" alt="">
+            <span id="twitter">@twitter username</span>
+          </p>
+
+          <p class="company contact-p">
+            <img src="./images/icon-company.svg" alt="">
+            <span id="company">Company</span>
+          </p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
