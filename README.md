@@ -9,4 +9,4 @@
 - JS
 - Axios
 
-You can access the site [here](https://arthurmadureira.github.io/DevFinder/)
+You can access the site [here](http://dev-finder-nu.vercel.app/)
